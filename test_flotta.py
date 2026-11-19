@@ -1,12 +1,12 @@
-from datetime import date, timedelta
 import unittest
+from datetime import date, timedelta
 
 from prenotazioni import (
+    ORIZZONTE_GIORNI,
     DataNonAmmessa,
     Flotta,
     Noleggio,
     NoleggioNonTrovato,
-    ORIZZONTE_GIORNI,
     Veicolo,
     VeicoloNonTrovato,
 )

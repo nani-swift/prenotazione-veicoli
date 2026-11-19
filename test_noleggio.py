@@ -1,5 +1,5 @@
-from datetime import date, timedelta
 import unittest
+from datetime import date, timedelta
 
 from prenotazioni import Noleggio
 
@@ -40,9 +40,7 @@ class TestNoleggio(unittest.TestCase):
         self.assertEqual(durata, 120)
 
     def test_si_sovrappone_veicoli_giorni_diversi_e_intervallo_interno(self):
-        altro_veicolo = Noleggio(
-            "U1", self.giorno, "08:30", "09:30", "Luigi Verdi", 2
-        )
+        altro_veicolo = Noleggio("U1", self.giorno, "08:30", "09:30", "Luigi Verdi", 2)
         altro_giorno = Noleggio(
             "F1",
             self.giorno + timedelta(days=1),
